@@ -43,9 +43,23 @@
                             </div>
                             <div class="form-group row">
                                 <label for="periode" class="col-sm-4 col-form-label-lg text-md-right">{{__('Periode ')}}</label>
-                                <input type="date" class="form-control col-md-1" id="periode" name="periode" value="{{old('periode')}}" required autofocus>
-                                <span class="col-form-label-lg">Sampai &ensp;</span>
-                                <input type="date" class="form-control col-md-1" id="akhir_periode" value="{{old('akhir_periode')}}">
+                                <div>
+                                    <input type="date" class="form-control col-md-1" id="periode" name="periode" value="{{old('periode')}}" required autofocus>
+                                    <span class="col-form-label-lg">Sampai &ensp;</span>
+                                    <input type="date" class="form-control col-md-1" id="akhir_periode" value="{{old('akhir_periode')}}">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="ipk" class="col-sm-4 col-form-label-lg text-md-right">{{__('IPK')}}</label>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" id="ipk" name="ipk" value="{{old('ipk')}}" required autofocus>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="jumlah_sks" class="col-sm-4 col-form-label-lg text-md-right">{{__('Jumlah SKS')}}</label>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" id="jumlah_sks" name="jumlah_sks" value="{{old('jumlah_sks')}}" required autofocus>
+                                </div>
                             </div>
                         </form>
                     </div>                    
